@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<display-name>SprintFinalUnidad5</display-name>
+
+	<!-- MIME mapping for CSS -->
+	<mime-mapping>
+		<extension>css</extension>
+		<mime-type>text/css</mime-type>
+	</mime-mapping>
+
+	<!-- MIME mapping for JS -->
+	<mime-mapping>
+		<extension>js</extension>
+		<mime-type>application/javascript</mime-type>
+	</mime-mapping>
+
+	<!-- MIME mapping for JPEG -->
+	<mime-mapping>
+		<extension>jpg</extension>
+		<mime-type>image/jpg</mime-type>
+	</mime-mapping>
+
+	<!-- MIME mapping for PNG -->
+	<mime-mapping>
+		<extension>png</extension>
+		<mime-type>image/png</mime-type>
+	</mime-mapping>
+
+	<!-- Welcome files -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<!-- Default servlet mapping for static resources -->
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.css</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.jpg</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.png</url-pattern>
+	</servlet-mapping>
+
+</web-app>
